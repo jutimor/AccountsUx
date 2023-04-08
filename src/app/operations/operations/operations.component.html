@@ -1,0 +1,16 @@
+<div class="componentContainer">
+    <mat-card class="operation" *ngFor="let operation of operations">
+        <mat-card-content>
+
+
+            <span class="amount">{{ operation.operationAmount | currency:'EUR'}}</span>
+
+            <span>{{ operation.operationDate | date:'long'}}</span>
+
+            <mat-icon *ngIf="operation.operationAmount > 0"
+                class="positiveAmount material-symbols-outlined">arrow_upward</mat-icon>
+            <mat-icon *ngIf="operation.operationAmount < 0"
+                class="negativeAmount material-symbols-outlined">arrow_downward</mat-icon>
+        </mat-card-content>
+    </mat-card>
+</div>

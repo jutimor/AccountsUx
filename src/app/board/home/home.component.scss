@@ -1,0 +1,13 @@
+.componentContainer {
+    margin: 2%;
+    display: flex;
+    gap: 1%;
+}
+
+.componentContainer .accounts {
+    flex: 2 0;
+}
+
+.componentContainer .operations {
+    flex: 3 0;
+}

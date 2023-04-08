@@ -1,0 +1,11 @@
+<div class="componentContainer">
+    <mat-card *ngFor="let account of accounts">
+        <mat-card-content>
+            <mat-icon *ngIf="account.accountBalance > 0" class="material-symbols-outlined">arrow_upward</mat-icon>
+            <mat-icon *ngIf="account.accountBalance < 0" color="primary" selected
+                class="material-symbols-outlined">arrow_downward</mat-icon>
+            <span>{{ account.accountLabel }}</span>
+            <span>{{ account.accountBalance | currency:'EUR'}}</span>
+        </mat-card-content>
+    </mat-card>
+</div>

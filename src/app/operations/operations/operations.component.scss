@@ -1,0 +1,32 @@
+.componentContainer {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+mat-card {
+    min-height: 64px;
+
+}
+
+.operation {
+    flex: 1 0;
+}
+
+.positiveAmount {
+    color: green;
+}
+
+.negativeAmount {
+    color: red;
+}
+
+mat-card-content {
+    display: flex;
+    gap: 14px;
+}
+
+mat-card-content span.amount {
+    flex-grow: 1;
+}
